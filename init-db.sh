@@ -15,7 +15,7 @@ mysql -e "CREATE DATABASE IF NOT EXISTS myapp;"
 # Crea un usuario MySQL llamado myuser con la contraseña mypassword si no existe.
 mysql -e "CREATE USER IF NOT EXISTS 'myuser'@'%' IDENTIFIED BY 'mypassword';"
 
-# Otorga todos los privilegios en la base de datos myapp al usuario myuser.
+# Otorga todos los privilegios en la base de datos myapp al usuario Myuser.
 mysql -e "GRANT ALL PRIVILEGES ON myapp.* TO 'myuser'@'%';"
 
 # Recarga las tablas de privilegios, haciendo efectivos los cambios.
