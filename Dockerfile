@@ -49,3 +49,5 @@ RUN chmod +x /usr/local/bin/start-services.sh
 
 # Define el comando predeterminado que se ejecutará cuando se inicie el contenedor. En este caso, el script de inicio de servicios.
 CMD ["/usr/local/bin/start-services.sh"]
+
+# Este Dockerfile prepara un entorno para un servidor web con PHP y MySQL, con scripts de inicialización y servicios configurados

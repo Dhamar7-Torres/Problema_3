@@ -14,7 +14,11 @@ for f in /docker-entrypoint-initdb.d/*; do
         *)        echo "$0: ignoring $f" ;;
     # Cierra la declaración case.
     esac
+# Marca el final del bucle for.
 done
 
-# Iniciamos Apache en primer plano
+# Inicia el servidor Apache en primer plano.
 apache2ctl -D FOREGROUND
+
+# En resumen, este script inicia el servicio MySQL, ejecuta cualquier script de inicialización en el
+# directorio /docker-entrypoint-initdb.d/, y luego inicia el servidor Apache.

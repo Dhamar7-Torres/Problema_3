@@ -7,3 +7,5 @@ phpinfo();
 
 // Cierra el bloque de código PHP.
 ?>
+
+<!-- En resumen, este código se utiliza para obtener una visión completa del entorno PHP en el que se ejecuta. -->
